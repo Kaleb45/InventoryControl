@@ -56,6 +56,7 @@ public static partial class CrudFuntions{
         //Para que la fecha tome el valor de Hora de Entrega
         pedido.Fecha = DateTime.Parse($"{pedido.Fecha:yyyy-MM-dd} {pedido.HoraEntrega:HH:mm:ss}");
 
+
         using(Almacen db = new()){
             switch(typeOfUser){
                 case 1:
